@@ -1,0 +1,46 @@
+Node
+npm init
+npm install express --save
+npm install ejs --save
+npm install -g nodemon
+nodemon arquivo.js // para rodar o nodemon
+
+npm install express-generator -g   Gerar estrutura basica do app
+
+npm install --save-dev sequelize-cli => instalar
+npm install mysql2
+
+add partials/header:
+<% -include ('partials/header.ejs')%>
+
+npm install body-parser --save  //responsavel por traduzir os dados enviados por formularios
+npm install --save sequelize //instalar sequelize
+npm install --save mysql2 // instalar bibliotecas
+em caso de erro para rodar o mysql abrir o workbranch e add a query em +SQL:
+ALTER USER 'root'@'localhost' INDENTIFIED WITH mysql_native_password BY  ' '
+
+
+Migrations
+criar/ atualiza no Mysql as tabelas
+$ npx sequelize-cli db:migrate    =>criar todas tabelas migrations
+
+
+EXECUTAR MYSQL NA LINHA DE COMANDO CMD:
+mysql -h localhost -u root -p
+
+comandos
+SHOW DATABASES;
+CREATE DATABASE <NOME>;
+USE <NOME DO BANCO>;
+SHOW TABLES; ver tabelas
+DESCRIBE <NOME DA TABELA>;
+INSERT INTO <nome tabela>(dados, dados, dados) VALUES(
+info,
+info,
+info);
+SELECT * FROM <TABELA> dados da tabela
+SELECTO * FROM usuarios WHERE idade <=18;
+DELETE FROM <tabela> WHERE nome = "Viviane";
+UPDATE usuarios SET nome = <"novo dado"> WHERE nome = <"dado a alterar">;
+);
+
